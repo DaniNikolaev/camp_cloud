@@ -1,4 +1,4 @@
-# Проект: Тестовое задание Сloud.ru Camp
+# Тестовое задание Сloud.ru Camp
 
 ## Описание
 
@@ -31,7 +31,11 @@
    ```bash
    pip install -r requirements.txt
 
+<<<<<<< HEAD
 Содержимое requirements.txt:
+=======
+Содержимое requirements.txt:  
+>>>>>>> fc7192aa8ada55671afe45361c1745f0617a6f9f
 astroid==3.3.10  
 colorama==0.4.6  
 dill==0.4.0  
@@ -40,6 +44,7 @@ flake8==7.2.0
 greenlet==3.2.2  
 iniconfig==2.1.0  
 isort==6.0.1  
+<<<<<<< HEAD
 mccabe==0.7.0
 packaging==25.0
 platformdirs==4.3.8
@@ -53,6 +58,21 @@ pytest==8.3.5
 tomli==2.2.1
 tomlkit==0.13.2
 typing_extensions==4.13.2
+=======
+mccabe==0.7.0  
+packaging==25.0  
+platformdirs==4.3.8  
+playwright==1.52.0  
+pluggy==1.6.0  
+pycodestyle==2.13.0  
+pyee==13.0.0  
+pyflakes==3.3.2  
+pylint==3.3.7  
+pytest==8.3.5  
+tomli==2.2.1  
+tomlkit==0.13.2  
+typing_extensions==4.13.2  
+>>>>>>> fc7192aa8ada55671afe45361c1745f0617a6f9f
 
 ### Запуск тестов
 Для запуска тестов выполните следующую команду в терминале:
