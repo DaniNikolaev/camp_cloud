@@ -32,14 +32,14 @@
    pip install -r requirements.txt
 
 Содержимое requirements.txt:
-astroid==3.3.10
-colorama==0.4.6
-dill==0.4.0
-exceptiongroup==1.3.0
-flake8==7.2.0
-greenlet==3.2.2
-iniconfig==2.1.0
-isort==6.0.1
+astroid==3.3.10  
+colorama==0.4.6  
+dill==0.4.0  
+exceptiongroup==1.3.0  
+flake8==7.2.0  
+greenlet==3.2.2  
+iniconfig==2.1.0  
+isort==6.0.1  
 mccabe==0.7.0
 packaging==25.0
 platformdirs==4.3.8

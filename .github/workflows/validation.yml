@@ -24,7 +24,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install flake8 pylint playwright pytest
-          playwright install
+          playwright install --with-deps
 
       - name: Run isort
         run: |
