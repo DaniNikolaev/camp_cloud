@@ -1,22 +1,28 @@
 import pytest
-from playwright.sync_api import expect, sync_playwright
+from playwright.sync_api import sync_playwright
 
 
 @pytest.fixture(scope="module")
-def page():
+def browser():
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
-        page = browser.new_page()
-        yield page
+        yield browser
         browser.close()
+
+
+@pytest.fixture
+def page(browser):
+    page = browser.new_page()
+    yield page
+    page.close()
 
 
 def test_title(page):
     page.goto("https://example.com")
-    expect(page).to_have_title("Example Domain")
+    assert "Example Domain" in page.title()
 
 
 def test_more_info_link(page):
     page.goto("https://example.com")
     page.get_by_text("More information...").click()
-    expect(page).to_have_url("https://www.iana.org/help/example-domains")
+    assert page.url == "https://www.iana.org/help/example-domains"
