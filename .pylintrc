@@ -1,0 +1,14 @@
+[MESSAGES CONTROL]
+disable=
+    missing-docstring,
+    redefined-outer-name,
+    import-error
+[FORMAT]
+max-line-length=120
+[BASIC]
+ignore=
+    .idea,
+    .pytest_cache
+    .venv,
+    __pycache__,
+    venv
