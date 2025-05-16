@@ -31,7 +31,7 @@
    ```bash
    pip install -r requirements.txt
 
-Содержимое requirements.txt:
+Содержимое requirements.txt:  
 astroid==3.3.10  
 colorama==0.4.6  
 dill==0.4.0  
